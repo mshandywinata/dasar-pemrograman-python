@@ -1,8 +1,8 @@
 # kalkulator sederhana untuk penjumlahan tiga buah bilangan
 
-angka1 = float(input("Angka pertama: "))
-angka2 = float(input("Angka kedua: "))
-angka3 = float(input("Angka ketiga: "))
+angka1 = int(input("Angka pertama: "))
+angka2 = int(input("Angka kedua: "))
+angka3 = int(input("Angka ketiga: "))
 
 jumlah = angka1 + angka2 + angka3
 
