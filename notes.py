@@ -64,3 +64,10 @@ print(type(name))
 # modifikasi string
 # upper(), lower(), strip()
 # var.upper() / var.lower() / var.strip()
+
+# PR
+# 1. Format file .pdf
+# 2. sisipkan flowchart
+# 3. Copy code programnya
+# 4. Screenshot output dari terminal
+# 5. Pengumpulan di SPOT atau ke email yulia.retnowati@upi.edu dengan subject Nama Lengkap_NIM_Tugas-2_1A
