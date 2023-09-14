@@ -1,4 +1,4 @@
-# luas lingkaran
+# menghitung luas lingkaran
 import math
 
 print("""
