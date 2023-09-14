@@ -39,3 +39,15 @@ print(f"Hello, {name}")
 
 # mengecek tipe data
 print(type(name))
+
+# tipe data python
+# numeric, dictionary, boolean, set, sequence type
+
+# numeric: integer, float, complex
+# jenis tipe data yang bisa digunakan untuk operasi matematika
+# tipe int dapat memiliki panjang tak terhingga
+
+# batas nilai float adalah 17 digit di belakang koma
+# bisa juga berupa bilangan ilmiah "e" atau pangkat 10
+
+# tipe data complex ialah data dengan nilai bilangan imajiner

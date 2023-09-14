@@ -2,7 +2,7 @@
 
 print("""
       
-PROGRAM MEMERIKSA KELULUSAN NILAI
+            PROGRAM MEMERIKSA KELULUSAN NILAI
 
 """)
 
