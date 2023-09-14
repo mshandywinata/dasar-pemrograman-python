@@ -51,3 +51,16 @@ print(type(name))
 # bisa juga berupa bilangan ilmiah "e" atau pangkat 10
 
 # tipe data complex ialah data dengan nilai bilangan imajiner
+
+# fungsi numeric
+# abs(), max(), min(), pow(x, a), round(x, a)
+
+# mengecek panjang string
+# len()
+
+# string slicing digunakan untuk mengambil sekumpulan string dengan rentanng tertentu
+# a[index_start:index_finish] / a[:index_finish] / a[index_start:]
+
+# modifikasi string
+# upper(), lower(), strip()
+# var.upper() / var.lower() / var.strip()
