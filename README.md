@@ -1,3 +1,3 @@
-# dasar_pemrograman_python
+# Dasar Pemrograman Python
 
 A collection of python projects for basic programming assignments.
