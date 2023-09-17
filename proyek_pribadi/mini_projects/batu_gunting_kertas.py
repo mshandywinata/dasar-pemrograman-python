@@ -1,12 +1,16 @@
 import random as rand
 import os
 
-border = "=========================================="
+border = "###############################################"
 
 print(f"""
 {border}
 
-SELAMAT DATANG DI GIM BATU GUNTING KERTAS!
+                🪨  ✂️  📰
+ 
+🔥SELAMAT DATANG DI GIM BATU GUNTING KERTAS!🔥
+
+                🪨  ✂️  📰
 
 {border}
 """)
@@ -19,18 +23,21 @@ comp_wins = 0
 choices = ["batu", "gunting", "kertas"]
 
 while True:
-    print(f"""KAMU: {user_wins} VS KOMPUTER: {comp_wins}
+    print(f"""🪨  ✂️  📰
+KAMU: {user_wins} VS KOMPUTER: {comp_wins}
 """)
     
     user_choice = input(
 """Pilih Batu/Gunting/Kertas
-atau ketik \"K\" untuk KELUAR.
+atau ketik \"K\" untuk KELUAR dari permainan.
 Pilihanmu: """).lower()
     if user_choice == "k":
         break
     
     if user_choice not in choices:
-        print("Masukkan pilihan yang tersedia!\n")
+        print("\nMasukkan pilihan yang tersedia!")
+        input("Tekan ENTER untuk mengulang! ")
+        os.system("cls")
         continue
     
     random_number = rand.randint(0, 2)
@@ -104,7 +111,8 @@ PERMAINAN SERI!
 print(f"""
 {border}
 
-TERIMA KASIH TELAH MENCOBA PROJECT INI, {username}!    
+TERIMA KASIH {username} KARENA
+TELAH MENCOBA PROJECT INI 🤟🤟    
 
 {border}
 """)

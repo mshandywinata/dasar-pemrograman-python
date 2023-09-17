@@ -6,7 +6,7 @@ username = input("Siapa namamu? ").upper()
 print(f"""
 {border}
 
-SELAMAT DATANG {username} DI PETUALANGAN INI!
+SELAMAT DATANG {username} DI PETUALANGAN BERCABANG!
 
 {border}
 """)
