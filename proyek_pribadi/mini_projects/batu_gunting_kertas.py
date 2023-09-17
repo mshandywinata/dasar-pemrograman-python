@@ -19,9 +19,13 @@ comp_wins = 0
 choices = ["batu", "gunting", "kertas"]
 
 while True:
+    print(f"""KAMU: {user_wins} VS KOMPUTER: {comp_wins}
+""")
+    
     user_choice = input(
 """Pilih Batu/Gunting/Kertas
-atau ketik \"K\" untuk KELUAR: """).lower()
+atau ketik \"K\" untuk KELUAR.
+Pilihanmu: """).lower()
     if user_choice == "k":
         break
     
@@ -32,32 +36,40 @@ atau ketik \"K\" untuk KELUAR: """).lower()
     random_number = rand.randint(0, 2)
     # batu = 0, gunting = 1, kertas = 2
     comp_choice = choices[random_number]
-    print(f"Komputer memillih {comp_choice}.")
+    print(f"""
+Komputer memillih {comp_choice}.""")
     
     if user_choice == "batu" and comp_choice == "gunting":
         print("Kamu menang!\n")
         user_wins += 1
-        os.system("pause")
+        input("Tekan ENTER untuk melanjutkan! ")
         os.system("cls")
 
     elif user_choice == "kertas" and comp_choice == "batu":
         print("Kamu menang!\n")
         user_wins += 1
-        os.system("pause")
+        # os.system("pause")
+        input("Tekan ENTER untuk melanjutkan! ")
         os.system("cls")
     
     elif user_choice == "gunting" and comp_choice == "kertas":
         print("Kamu menang!\n")
         user_wins += 1
-        os.system("pause")
+        input("Tekan ENTER untuk melanjutkan! ")
+        os.system("cls")
+        
+    elif user_choice == comp_choice:
+        print("Seri!\n")
+        input("Tekan ENTER untuk melanjutkan! ")
         os.system("cls")
 
     else:
         print("Kamu kalah!\n")
         comp_wins +=1
-        os.system("pause")
+        input("Tekan ENTER untuk melanjutkan! ")
         os.system("cls")
 
+os.system("cls")
 print(f"""
 Kamu menang sebanyak {user_wins} kali,
 komputer menang sebanyak {comp_wins} kali!""")
