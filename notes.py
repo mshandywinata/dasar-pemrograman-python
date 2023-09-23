@@ -71,3 +71,21 @@ print(type(name))
 # 3. Copy code programnya
 # 4. Screenshot output dari terminal
 # 5. Pengumpulan di SPOT atau ke email yulia.retnowati@upi.edu dengan subject Nama Lengkap_NIM_Tugas-2_1A
+
+# PERTEMUAN 3
+# tipe data list dan tuple
+# list dan tuple biasa juga disebut tipe data sequence
+
+# list bisa menyimpan berbagai tipe data dalam satu variabel dengan posisi disebut sebagai index,
+# tipe data ini bersifat mutable (dapat dimodifikasi), ordered, dan memungkinkan adanya duplikasi
+
+# manipulasi dan akses data list
+# len(), var[index], var[indexStart:indexEnd - 1], append(), insert(), pop(), extend(), 
+
+# tuple memiliki sifat seperti list namum immutable
+# manipulasi dan akses data tuple
+# len(), var[index], var[indexStart:indexEnd - 1]
+# list() => konversi tuple ke list
+# packing memungkinkan variabel pada tiap nilai yang ada di tuple
+# tuple = ("data1", "data2", ..., "dataN")
+# (var1, var2, ..., varN) = tuple
