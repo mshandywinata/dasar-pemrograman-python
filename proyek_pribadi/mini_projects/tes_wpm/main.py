@@ -1,4 +1,3 @@
-import os
 import curses as crs
 from curses import wrapper
 import time as tm
