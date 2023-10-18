@@ -11,8 +11,8 @@ def start_screen(stdscr):
     stdscr.getkey()
 
 def display_text(stdscr, target, current, wpm = 0):
-    stdscr.addstr(target)
-    stdscr.addstr(1, 0, f"Kecepatan: {wpm} kata/menit")
+    stdscr.addstr(2, 0, target)
+    stdscr.addstr(0, 0, f"[Kecepatan: {wpm} kata/menit] [ESC] untuk KELUAR")
 
     for i, char in enumerate(current):
         correct_char = target[i]
@@ -21,7 +21,7 @@ def display_text(stdscr, target, current, wpm = 0):
         if char != correct_char:
             color = crs.color_pair(2)
             
-        stdscr.addstr(0, i, char, color)
+        stdscr.addstr(2, i, char, color)
 
 def load_text():
     with open("D:/Codes/Python/dasar-pemrograman-python/proyek_pribadi/mini_projects/tes_wpm/teks.txt", "r") as f:
@@ -71,7 +71,7 @@ def main(stdscr):
     
     while True:
         wpm_test(stdscr)
-        stdscr.addstr(2, 0, "Kamu telah berhasil menyelesaikan teksnya! Tekan tombol apapun untuk melanjutkan...")
+        stdscr.addstr(4, 0, "Kamu telah berhasil menyelesaikan teksnya! Tekan tombol apapun untuk melanjutkan...")
         key = stdscr.getkey()
         
         if ord(key) == 27:

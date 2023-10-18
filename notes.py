@@ -89,3 +89,9 @@ print(type(name))
 # packing memungkinkan variabel pada tiap nilai yang ada di tuple
 # tuple = ("data1", "data2", ..., "dataN")
 # (var1, var2, ..., varN) = tuple
+
+# PERTEMUAN 4
+# tipe data set dan dictionary
+
+# PERTEMUAN 6
+# kondisional

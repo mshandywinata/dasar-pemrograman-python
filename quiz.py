@@ -2,6 +2,8 @@ import os
 
 border = "=============================="
 
+os.system('cls')
+
 print(f"""  
 
 WELCOME to eKOS!

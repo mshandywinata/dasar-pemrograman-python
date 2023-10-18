@@ -1,0 +1,1 @@
+Jumlah deposit harus lebih dari 0

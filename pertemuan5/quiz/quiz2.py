@@ -15,6 +15,6 @@ total = (2 * panjang_meter_ke_kilo + 2 * lebar_centi_ke_kilo) * putaran
 print(f"""
 total jarak yang telah
 ditempuh Ibu Rinda
-setelah {putaran}x adalah
+setelah {putaran}x putaran adalah
 {total} km
 """)
