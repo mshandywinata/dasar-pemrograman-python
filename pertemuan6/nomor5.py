@@ -12,7 +12,7 @@ if total_belanjaan.isdigit():
     
     if total_belanjaan > 500000:
         persentase_diskon = 10
-        total_harga = total_belanjaan + (total_belanjaan * (persentase_diskon / 100))
+        total_harga = total_belanjaan - (total_belanjaan * (persentase_diskon / 100))
         
         print(f"""
 Selamat! Kamu mendapatkan diskon sebesar {persentase_diskon}%

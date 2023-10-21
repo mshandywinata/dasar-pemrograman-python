@@ -11,14 +11,13 @@
 
 barang_jualan_bulan_juli = ["T-Shirt", "Blouse", "Kemeja", "Celana Panjang", "Rok", "Baju Renang", "Tas", "Topi", "Sepatu", "Sandal"]
 
-print(f"Barang jualan bulan ini: {barang_jualan_bulan_juli}")
-print(f"Jumlah barang jualan: {len(barang_jualan_bulan_juli)}")
-
-barang_jualan_bulan_juli[5] = "Gamis"
-barang_jualan_bulan_juli.append("Ikat Rambut")
-barang_jualan_bulan_juli.append("Kerudung")
+print(f"Barang jualan bulan Juli: {barang_jualan_bulan_juli}")
+print(f"Jumlah barang jualan bulan Juli: {len(barang_jualan_bulan_juli)}")
 
 barang_jualan_bulan_ini = barang_jualan_bulan_juli
+barang_jualan_bulan_ini[5] = "Gamis"
+barang_jualan_bulan_ini.append("Ikat Rambut")
+barang_jualan_bulan_ini.append("Kerudung")
 
 print(f"Barang jualan bulan ini: {barang_jualan_bulan_ini}")
-print(f"Jumlah barang jualan: {len(barang_jualan_bulan_ini)}")
+print(f"Jumlah barang jualan bulan ini: {len(barang_jualan_bulan_ini)}")
