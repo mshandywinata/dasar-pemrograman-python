@@ -22,7 +22,8 @@ class Game:
             'grass': load_images('tiles/grass'),
             'large_decor': load_images('tiles/large_decor'),
             'stone': load_images('tiles/stone'),
-            'player': load_image('entities/player.png')
+            'player': load_image('entities/player.png'),
+            'background': load_image('background.png'),
         }
         
         self.collision_area = pg.Rect((50, 50, 300, 50))
@@ -35,12 +36,16 @@ class Game:
 
     def run(self):
         while True:
-            self.display.fill((14, 219, 248))
+            self.display.blit(self.assets['background'], (0, 0))
             
-            self.tilemap.render(self.display, offset = self.scroll)
+            self.scroll[0] += (self.player.rect().centerx - self.display.get_width() / 2 - self.scroll[0]) / 30
+            self.scroll[1] += (self.player.rect().centery - self.display.get_height() / 2 - self.scroll[1]) / 30
+            render_scroll = (int(self.scroll[0]), int(self.scroll[1]))
+            
+            self.tilemap.render(self.display, offset = render_scroll)
             
             self.player.update(self.tilemap, (self.movement[1] - self.movement[0], 0))
-            self.player.render(self.display, offset = self.scroll)
+            self.player.render(self.display, offset = render_scroll)
 
             for event in pg.event.get():
                 if event.type == pg.QUIT:
