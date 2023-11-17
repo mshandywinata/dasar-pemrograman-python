@@ -1,14 +1,17 @@
-banyakBilangan = int(input("Banyak bilangan: "))
-jumlah = 0
+kesempatan = 3
+daftarAngka = []
 
-for i in range(1, banyakBilangan + 1):
-    bilangan = int(input(f"Masukkan bilangan ke-{i}: "))
+while kesempatan > 0:
+    angka = int(input("Input: "))
     
-    for i in range(2, int(bilangan ** (1/2)) + 1):
-        if bilangan % i == 0:
-            jumlah += bilangan
-            break
-        else:   
-            jumlah += 0
-            
-print(f"Hasil penjumlahan bilangan yang bukan prima: {jumlah}")
+    if angka not in daftarAngka or angka < min(daftarAngka):
+        daftarAngka.append(angka)
+        kesempatan = 3
+    else:
+        kesempatan -= 1
+
+hasil = 1
+for i in daftarAngka:
+    hasil *= i
+    
+print(f"Hasil perkalian nilai yang mengecil: {hasil}")
