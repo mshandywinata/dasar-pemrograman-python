@@ -2,15 +2,12 @@
 # NIM: 2305848
 
 import numpy as np
-import random as rand
 
 def pembuatDataDummy(batasBawah, batasAtas, banyakData):
-    return [rand.randrange(batasBawah, batasAtas) for i in range(banyakData)]
+    return np.random.randint(batasBawah, batasAtas, banyakData)
 
-suhuSingapura = np.array(pembuatDataDummy(0, 100, 10))
-print(f"Suhu di Singapura (Celcius): {suhuSingapura}")
+suhuCelcius = np.array(pembuatDataDummy(0, 100, 10))
+print(f"Suhu di Singapura (Celcius): {suhuCelcius}")
 
-for i in range(len(suhuSingapura)):
-    suhuSingapura[i] = (suhuSingapura[i] * 9 / 5) + 32
-
-print(f"Suhu di Singapura (Fahrenheit): {suhuSingapura}")
+suhuFarenheit = (suhuCelcius * 9 / 2) + 32
+print(f"Suhu di Singapura (Fahrenheit): {suhuFarenheit}")
